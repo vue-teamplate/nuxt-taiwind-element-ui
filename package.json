@@ -12,11 +12,16 @@
     "lint": "yarn lint:js && yarn lint:style"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/router-extras": "^1.1.0",
     "core-js": "^3.6.5",
+    "dayjs": "^1.9.3",
     "element-ui": "^2.13.2",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.14.6",
+    "sass-loader": "^10.0.3",
     "vue2-perfect-scrollbar": "^1.5.0",
     "vuejs-logger": "^1.5.4"
   },
@@ -26,6 +31,7 @@
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/svg-sprite": "^0.5.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",

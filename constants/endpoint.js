@@ -1,0 +1,5 @@
+export const LOGIN_ENDPOINT = '/auth/login'
+export const ACCOUNT_ENDPOINT = '/account'
+export const PROFILING_ENDPOINT = '/profiling'
+export const LOGOUT_ENDPOINT = '/account/logout'
+export const DEV_TOKEN_ENDPOINT = '/auth/dev'
