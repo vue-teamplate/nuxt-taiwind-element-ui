@@ -44,7 +44,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/element-ui',
+    // '@/plugins/element-ui',
     '@/plugins/logger',
     '@/plugins/scrollbar',
     '@/plugins/dayjs',
@@ -70,28 +70,6 @@ export default {
     input: '~/assets/icons/svg',
     output: '~/assets/sprite/gen',
     elementClass: 'svg-icon',
-  },
-
-  tailwindcss: {
-    important: true,
-    config: {
-      future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-        defaultLineHeights: true,
-        standardFontWeights: true,
-      },
-      theme: {
-        // element break point
-        screens: {
-          xs: { max: '768px' },
-          sm: '768px',
-          md: '992px',
-          lg: '1200px',
-          xl: '1920px',
-        },
-      },
-    },
   },
 
   publicRuntimeConfig: {
