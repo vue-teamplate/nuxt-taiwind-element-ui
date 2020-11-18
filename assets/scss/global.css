@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.el-loading-spinner svg {
+  display: inline-block;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 400;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  contain: strict;
+  fill: currentColor;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+
+[style*="--aspect-ratio"] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=global.css.map */

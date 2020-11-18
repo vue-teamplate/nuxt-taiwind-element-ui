@@ -1,161 +1,50 @@
 <template>
-  <div class="relative">
-    <div class="absolute top-0 left-0 z-10 w-full">
-      <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-        <nav
-          style="background-color: rgba(26, 26, 26, 0.5)"
-          class="relative flex items-center justify-between lg:justify-start p-5 text-white font-thin rounded-2xl"
-        >
-          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-            <div class="flex items-center justify-between w-full md:w-auto">
-              <a href="#" aria-label="Home"
-                ><img
-                  src="~assets/svg/logo.learnova-white.svg"
-                  alt="Logo"
-                  class="h-8 w-auto sm:h-10"
-              /></a>
-              <div class="-mr-2 flex items-center md:hidden">
-                <button
-                  type="button"
-                  class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                  @click="toggleMenu"
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:block md:ml-10 md:pr-4">
-            <a href="#" class="font-medium transition duration-150 ease-in-out"
-              >Khám phá khoá học</a
-            >
-            <a
-              href="#"
-              class="ml-8 font-light tracking-wide transition duration-150 ease-in-out"
-              >Giành cho bạn</a
-            >
-            <a
-              href="#"
-              class="ml-8 font-light tracking-wide transition duration-150 ease-in-out"
-              >Thảo luận</a
-            >
-          </div>
-          <div class="flex-grow justify-between md:flex hidden">
-            <div></div>
-            <div class="flex">
-              <div
-                class="p-3 rounded-3xl"
-                style="background-color: rgba(254, 247, 246, 0.18039)"
-              >
-                <div
-                  class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
-                >
-                  <svg-icon name="search-outline"></svg-icon>
-                </div>
-              </div>
-            </div>
-            <div>b</div>
-          </div>
-        </nav>
-      </div>
+  <div>
+    <div class="box-border relative">
       <div
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-        :class="{ hidden: !showMenu }"
+        class="header-slider items-center sm:bg-auto lg:bg-cover lg:bg-center md:bg-bottom sm:bg-left-bottom"
       >
-        <div class="rounded-lg shadow-md">
-          <div
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="main-menu"
-            class="rounded-lg bg-white shadow-xs overflow-hidden"
-          >
-            <div class="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <img
-                  src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                  alt=""
-                  class="h-8 w-auto"
-                />
+        <Navbar />
+        <div class="header-slide__content w-full flex pt-20 md:pt-0">
+          <div class="nd w-full md:w-5/12 flex justify-center md:justify-end">
+            <div class="w-5/6 md:w-3/4 flex flex-col justify-center">
+              <div
+                class="text-white font-bold text-5xl tracking-normal sm:text-6xl md:5xl lg:text-6xl md:tracking-wide md:leading-normal"
+              >
+                Kỹ năng mới mỗi ngày với
+                <div class="font-bold" style="color: #ffc107">Learnova</div>
               </div>
-              <div class="-mr-2">
+              <div class="text-white text-2xl py-10">
+                Để chúng tôi giúp bạn lựa chọn khóa học phù hợp nhất!
+              </div>
+              <div class="pt-4 flex justify-center">
                 <button
-                  type="button"
-                  aria-label="Close menu"
-                  class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                  @click="toggleMenu"
+                  class="b1 bg-white text-indigo-600 w-40 font-semibold text-lg rounded-md mx-4 py-3"
+                  style="outline: none"
                 >
-                  <svg
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="h-6 w-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
+                  Tìm hiểu thêm
+                </button>
+                <button
+                  class="b2 text-white w-40 font-semibold text-lg rounded-md py-3"
+                  style="outline: none"
+                >
+                  Bắt đầu
                 </button>
               </div>
-            </div>
-            <div class="px-2 pt-2 pb-3">
-              <a
-                href="#"
-                role="menuitem"
-                class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                >Product</a
-              >
-              <a
-                href="#"
-                role="menuitem"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                >Features</a
-              >
-              <a
-                href="#"
-                role="menuitem"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                >Marketplace</a
-              >
-              <a
-                href="#"
-                role="menuitem"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                >Company</a
-              >
-            </div>
-            <div>
-              <a
-                href="#"
-                role="menuitem"
-                class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
-              >
-                Log in
-              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="relative header-slider flex justify-center items-center">
-        <div class="header-slider__bg"></div>
-        <div class="header-slide__content w-full flex z-20">content</div>
-      </div>
+    <div class="content2">
+      <Item1 />
+      <Item2 />
+      <Item3 />
+      <Item4 />
+      <Batdau />
+      <Uudiem />
+      <Chiase />
+      <Footer />
     </div>
   </div>
 </template>
@@ -177,18 +66,22 @@ export default {
 
 <style lang="scss">
 .header-slider {
-  height: 90vh;
-  &__bg {
-    background-image: url('~assets/image/top-banner.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+  background-image: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.5)),
+    url('~assets/image/top-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 755px;
+
+  .nd {
+    .b2 {
+      background-image: linear-gradient(to right, #e208a3, #ff4698);
+    }
   }
-  // &__content {
-  // }
+}
+.content2 {
+  background-color: #2a3065;
 }
 </style>
