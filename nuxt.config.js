@@ -51,7 +51,7 @@ export default {
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
@@ -63,7 +63,14 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/router-extras',
     '@nuxtjs/svg-sprite',
+    '@nuxtjs/global-components',
   ],
+
+  globalComponents: {
+    /* module options */
+    dir: 'components',
+    suffixes: [''],
+  },
 
   svgSprite: {
     // manipulate module options

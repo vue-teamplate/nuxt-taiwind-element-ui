@@ -30,6 +30,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/global-components": "^0.6.1",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/svg-sprite": "^0.5.0",
     "@nuxtjs/tailwindcss": "^3.1.0",
