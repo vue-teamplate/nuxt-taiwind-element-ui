@@ -103,17 +103,25 @@
                   />
                 </div>
                 <h3
-                  class="text-white font-semibold py-2 leading-7 text-2xl lg:text-3xl"
+                  class="text-white font-semibold py-2 xs:py-4 leading-6 xs:leading-8 lg:leading-9 text-xl xs:text-3xl lg:text-4xl"
                 >
                   Nhiếp ảnh bằng smartphone cho mọi nhu...
                 </h3>
                 <p
-                  class="font-normal leading-5 text-justify tracking-tight text-white py-2 :text-base lg:text-lg"
+                  class="font-normal leading-5 xs:leading-6 text-justify tracking-tight text-white pt-2 pb-0 text-base xs:text-lg lg:text-xl text-ellipsis-2 overflow-hidden"
                 >
                   Chụp ảnh bằng điện thoại, một khái niệm không mới và đã trở
-                  thành một trào lưu...
+                  thành một trào lưu trong nhiếp ảnh đi kèm với sự phát triển
+                  của mạng xã hội. Sức mạnh của một chiếc điện thoại không chỉ
+                  để selfie. Mà nó còn giúp bạn hiện thực hoá những sáng tạo
+                  trong nhiếp ảnh bằng một công cụ tối giản, nhỏ gọn nhưng vô
+                  cùng mạnh mẽ và linh hoạt. So với máy ảnh, điện thoại sẽ không
+                  thể vượt qua được về chất lượng hình ảnh cũng như sự tuỳ biến
+                  bằng các hiệu ứng ống kính. Tuy nhiên, lợi thế lớn nhất của
+                  việc chụp hình bằng điện thoại đó là: Sự nhỏ gọn và thao tác
+                  dễ sử dụng.
                 </p>
-                <div class="flex pt-2 text-white">
+                <div class="flex pt-6 text-white">
                   <div class="w-4/12 text-center">
                     <p
                       class="font-normal text-xl lg:text-2xl pb-2 xs:pb-3 pt-0 leading-4"
@@ -262,7 +270,7 @@
           <!-- /anh -->
           <!-- chan -->
           <div
-            class="foot1 p-5 relative rounded-b-xl"
+            class="foot1 p-5 relative rounded-b-lg"
             style="background-color: #3e38d7"
           >
             <div class="flex flex-col xs:flex-row sm:flex-col lg:flex-row">
@@ -274,17 +282,25 @@
                   />
                 </div>
                 <h3
-                  class="text-white font-semibold py-2 leading-7 text-2xl lg:text-3xl"
+                  class="text-white font-semibold py-2 xs:py-4 leading-6 xs:leading-8 lg:leading-9 text-xl xs:text-3xl lg:text-4xl"
                 >
                   Nhiếp ảnh bằng smartphone cho mọi nhu...
                 </h3>
                 <p
-                  class="font-normal leading-5 text-justify tracking-tight text-white py-2 :text-base lg:text-lg"
+                  class="font-normal leading-5 xs:leading-6 text-justify tracking-tight text-white pt-2 pb-0 text-base xs:text-lg lg:text-xl text-ellipsis-2 overflow-hidden"
                 >
                   Chụp ảnh bằng điện thoại, một khái niệm không mới và đã trở
-                  thành một trào lưu...
+                  thành một trào lưu trong nhiếp ảnh đi kèm với sự phát triển
+                  của mạng xã hội. Sức mạnh của một chiếc điện thoại không chỉ
+                  để selfie. Mà nó còn giúp bạn hiện thực hoá những sáng tạo
+                  trong nhiếp ảnh bằng một công cụ tối giản, nhỏ gọn nhưng vô
+                  cùng mạnh mẽ và linh hoạt. So với máy ảnh, điện thoại sẽ không
+                  thể vượt qua được về chất lượng hình ảnh cũng như sự tuỳ biến
+                  bằng các hiệu ứng ống kính. Tuy nhiên, lợi thế lớn nhất của
+                  việc chụp hình bằng điện thoại đó là: Sự nhỏ gọn và thao tác
+                  dễ sử dụng.
                 </p>
-                <div class="flex pt-2 text-white">
+                <div class="flex pt-6 text-white">
                   <div class="w-4/12 text-center">
                     <p
                       class="font-normal text-xl lg:text-2xl pb-2 xs:pb-3 pt-0 leading-4"
