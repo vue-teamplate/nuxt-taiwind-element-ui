@@ -1,238 +1,26 @@
 <template>
   <div class="item4 pb-8">
-    <div class="flex justify-center">
-      <div class="justify-center w-11/12 pt-20 pb-12">
-        <div class="flex pb-10">
-          <h1 class="text-5xl text-white font-bold pr-4">
-            Khóa học được quan tâm
-          </h1>
-          <img src="https://learnova.vn/img/pattern~.svg" />
-        </div>
-        <div class="flex justify-between px-6 flex-row-reverse">
-          <div class="option1 hidden" style="width: 28%">
-            <div class="bg-option1 w-full rounded-t-xl relative">
+    <div class="px-1 xs:px-8 md:px-16">
+      <!-- tieu de -->
+      <div class="flex flex-col xs:flex-row px-4 pt-8 xs:pt-16 pb-10">
+        <h1 class="text-3xl xs:text-4xl sm:text-5xl text-white font-bold pb-2">
+          Khóa học nổi bật
+        </h1>
+
+        <img
+          src="https://learnova.vn/img/pattern~.svg"
+          class="w-20 sm:w-auto xs:pl-4"
+        />
+      </div>
+      <!-- /tieu de -->
+      <div class="flex justify-between px-4 xs:px-6">
+        <div class="option4 md:px-4 w-full md:w-auto">
+          <!-- anh -->
+          <div style="--aspect-ratio: 2/1">
+            <div class="bg-option4 w-full rounded-t-lg relative">
               <button
                 class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
-                style="top: 15px; left: 15px"
-              >
-                <svg-icon name="bar-chart" class="pt-1"></svg-icon>
-                <p>Mọi trình độ</p>
-              </button>
-              <div
-                class="flex justify-between absolute text-white w-full px-3"
-                style="bottom: 12px"
-              >
-                <div class="pl-0">
-                  <p class="text-2xl font-medium leading-4 mt-1">4</p>
-                  <h2 class="font-normal leading-5" style="font-size: 16px">
-                    người đã học
-                  </h2>
-                </div>
-
-                <div class="flex">
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="heart-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="bookmark-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="foot1 p-5 relative rounded-b-xl text-blue-800"
-              style="background-color: #e9eff8"
-            >
-              <h3 class="font-semibold leading-7 pb-6" style="font-size: 19px">
-                Nhiếp ảnh bằng smartphone cho mọi nhu cầu
-              </h3>
-              <hr class="border-t border-gray-400" />
-              <div class="flex justify-between pt-3">
-                <div class="flex">
-                  <div>
-                    <img
-                      src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/nhiep-anh-smart-phone/anh/khanh_nguyen_avatar.jpg"
-                      class="rounded-full"
-                      style="width: 37px"
-                    />
-                  </div>
-                  <div class="pl-4 flex flex-col justify-center">
-                    <h2 class="font-medium" style="font-size: 17px">
-                      NAG Nguyễn Khánh
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <p
-                    class="font-semibold text-2xl pt-0 pr-1 flex flex-col justify-center"
-                  >
-                    0
-                  </p>
-                  <div class="flex flex-col justify-center text-yellow-500">
-                    <svg-icon name="star"></svg-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="option2" style="width: 28%">
-            <div class="bg-option2 w-full rounded-t-xl relative">
-              <button
-                class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
-                style="top: 15px; left: 15px"
-              >
-                <svg-icon name="bar-chart" class="pt-1"></svg-icon>
-                <p>Mọi trình độ</p>
-              </button>
-              <div
-                class="flex justify-between absolute text-white w-full px-3"
-                style="bottom: 12px"
-              >
-                <div class="pl-0">
-                  <p class="text-2xl font-medium leading-4 mt-1">5</p>
-                  <h2 class="font-normal leading-5" style="font-size: 16px">
-                    người đã học
-                  </h2>
-                </div>
-
-                <div class="flex">
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="heart-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="bookmark-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="foot1 p-5 relative rounded-b-xl text-blue-800"
-              style="background-color: #e9eff8"
-            >
-              <h3 class="font-semibold leading-7 pb-5" style="font-size: 20px">
-                Quản lý Tài chính Gia đình hiệu quả
-              </h3>
-              <hr class="border-t border-gray-400" />
-              <div class="flex justify-between pt-3">
-                <div class="flex">
-                  <div>
-                    <img
-                      src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/tai-chinh-gia-dinh/anh/ts._dinh_thi_thanh_van_tccn.jpg"
-                      class="rounded-full"
-                      style="width: 37px"
-                    />
-                  </div>
-                  <div class="pl-4 flex flex-col justify-center">
-                    <h2 class="font-medium" style="font-size: 17px">
-                      TS. Đinh Thị Thanh Vân
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <p
-                    class="font-semibold text-2xl pt-0 pr-1 flex flex-col justify-center"
-                  >
-                    0
-                  </p>
-                  <div class="flex flex-col justify-center text-yellow-500">
-                    <svg-icon name="star"></svg-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="option3" style="width: 28%">
-            <div class="bg-option3 w-full rounded-t-xl relative">
-              <button
-                class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
-                style="top: 15px; left: 15px"
-              >
-                <svg-icon name="bar-chart" class="pt-1"></svg-icon>
-                <p>Mọi trình độ</p>
-              </button>
-              <div
-                class="flex justify-between absolute text-white w-full px-3"
-                style="bottom: 12px"
-              >
-                <div class="pl-0">
-                  <p class="text-2xl font-medium leading-4 mt-1">1</p>
-                  <h2 class="font-normal leading-5" style="font-size: 16px">
-                    người đã học
-                  </h2>
-                </div>
-
-                <div class="flex">
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="heart-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="bookmark-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="foot1 p-5 relative rounded-b-xl text-blue-800"
-              style="background-color: #e9eff8"
-            >
-              <h3 class="font-semibold leading-7 pb-5" style="font-size: 20px">
-                (COMING SOON) Mang bầu không âu lo: Quản lý thai kỳ...
-              </h3>
-              <hr class="border-t border-gray-400" />
-              <div class="flex justify-between pt-3">
-                <div class="flex">
-                  <div>
-                    <img
-                      src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/mang-bau-ko-au-lo/anh/trang_moon_avatar.jpg"
-                      class="rounded-full"
-                      style="width: 37px"
-                    />
-                  </div>
-                  <div class="pl-4 flex flex-col justify-center">
-                    <h2 class="font-medium" style="font-size: 17px">
-                      ThS. Nguyễn Minh Trang
-                    </h2>
-                  </div>
-                </div>
-
-                <div class="flex">
-                  <p
-                    class="font-semibold text-2xl pt-0 pr-1 flex flex-col justify-center"
-                  >
-                    0
-                  </p>
-                  <div class="flex flex-col justify-center text-yellow-500">
-                    <svg-icon name="star"></svg-icon>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="option4" style="width: 28%">
-            <div class="bg-option4 w-full rounded-t-xl relative">
-              <button
-                class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
-                style="top: 15px; left: 15px"
+                style="top: 15px; left: 15px; outline: none"
               >
                 <svg-icon name="bar-chart" class="pt-1"></svg-icon>
                 <p>Mọi trình độ</p>
@@ -248,59 +36,289 @@
                   </h2>
                 </div>
 
+                <!-- trai tim binh chon -->
                 <div class="flex">
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="heart-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#">
+                      <div class="flex">
+                        <svg-icon
+                          name="heart-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
                   </div>
-                  <div class="flex px-2 flex-col justify-center">
-                    <div class="flex">
-                      <svg-icon name="bookmark-outline" class="pr-1"></svg-icon>
-                      <p class="font-medium text-lg leading-3">1</p>
-                    </div>
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#"
+                      ><div class="flex">
+                        <svg-icon
+                          name="bookmark-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
                   </div>
                 </div>
+                <!-- /trai tim binh chon -->
               </div>
             </div>
-            <div
-              class="foot1 p-5 relative rounded-b-xl text-blue-800"
-              style="background-color: #e9eff8"
+          </div>
+          <!-- /anh -->
+          <!-- chan -->
+          <div
+            class="foot1 p-3 xs:p-5 md:p-3 lg:p-5 relative rounded-b-lg text-blue-800"
+            style="background-color: #e9eff8"
+          >
+            <h3
+              class="font-semibold lg:leading-7 pb-3 xs:pb-5 md:pb-3 lg:pb-5 text-base xs:text-xl md:text-base lg:text-xl"
             >
-              <h3 class="font-semibold leading-7 pb-5" style="font-size: 20px">
-                Cùng con xây dựng tự tin giao tiếp, chủ động cuộc sống
-              </h3>
-              <hr class="border-t border-gray-400" />
-              <div class="flex justify-between pt-3">
-                <div class="flex">
-                  <div>
-                    <img
-                      src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/be-tu-tin/anh/chi_mai_avatar.jpg"
-                      class="rounded-full"
-                      style="width: 37px"
-                    />
-                  </div>
-                  <div class="pl-4 flex flex-col justify-center">
-                    <h2 class="font-medium" style="font-size: 17px">
-                      ThS. Nguyễn Chi Mai
-                    </h2>
-                  </div>
+              Cùng con xây dựng tự tin giao tiếp, chủ động cuộc sống
+            </h3>
+            <hr class="border-t border-gray-400" />
+            <div class="flex justify-between pt-3">
+              <div class="flex">
+                <div>
+                  <img
+                    src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/be-tu-tin/anh/chi_mai_avatar.jpg"
+                    class="rounded-full w-8 xs:w-10 md:w-8 lg:w-10"
+                  />
                 </div>
-
-                <div class="flex">
-                  <p
-                    class="font-semibold text-2xl pt-0 pr-1 flex flex-col justify-center"
+                <div class="pl-4 flex flex-col justify-center">
+                  <h2
+                    class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg"
                   >
-                    0
-                  </p>
-                  <div class="flex flex-col justify-center text-yellow-500">
-                    <svg-icon name="star"></svg-icon>
-                  </div>
+                    ThS. Nguyễn Chi Mai
+                  </h2>
+                </div>
+              </div>
+
+              <div class="flex">
+                <p
+                  class="font-semibold text-lg xs:text-2xl md:text-lg lg:text-2xl pt-0 pr-1 flex flex-col justify-center"
+                >
+                  0
+                </p>
+                <div class="flex flex-col justify-center text-yellow-500">
+                  <svg-icon name="star"></svg-icon>
                 </div>
               </div>
             </div>
           </div>
+          <!-- /chan -->
+        </div>
+        <div class="option4 px-4 hidden md:block">
+          <!-- anh -->
+          <div style="--aspect-ratio: 2/1">
+            <div class="bg-option4 w-full rounded-t-xl relative">
+              <button
+                class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
+                style="top: 15px; left: 15px; outline: none"
+              >
+                <svg-icon name="bar-chart" class="pt-1"></svg-icon>
+                <p>Mọi trình độ</p>
+              </button>
+              <div
+                class="flex justify-between absolute text-white w-full px-3"
+                style="bottom: 12px"
+              >
+                <div class="pl-0">
+                  <p class="text-2xl font-medium leading-4 mt-1">3</p>
+                  <h2 class="font-normal leading-5" style="font-size: 16px">
+                    người đã học
+                  </h2>
+                </div>
+
+                <!-- trai tim binh chon -->
+                <div class="flex">
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#">
+                      <div class="flex">
+                        <svg-icon
+                          name="heart-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#"
+                      ><div class="flex">
+                        <svg-icon
+                          name="bookmark-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- /trai tim binh chon -->
+              </div>
+            </div>
+          </div>
+          <!-- /anh -->
+          <!-- chan -->
+          <div
+            class="foot1 p-3 xs:p-5 md:p-3 lg:p-5 relative rounded-b-xl text-blue-800"
+            style="background-color: #e9eff8"
+          >
+            <h3
+              class="font-semibold lg:leading-7 pb-3 xs:pb-5 md:pb-3 lg:pb-5 text-base xs:text-xl md:text-base lg:text-xl"
+            >
+              Cùng con xây dựng tự tin giao tiếp, chủ động cuộc sống
+            </h3>
+            <hr class="border-t border-gray-400" />
+            <div class="flex justify-between pt-3">
+              <div class="flex">
+                <div>
+                  <img
+                    src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/be-tu-tin/anh/chi_mai_avatar.jpg"
+                    class="rounded-full w-8 xs:w-10 md:w-8 lg:w-10"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <h2
+                    class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg"
+                  >
+                    ThS. Nguyễn Chi Mai
+                  </h2>
+                </div>
+              </div>
+
+              <div class="flex">
+                <p
+                  class="font-semibold text-lg xs:text-2xl md:text-lg lg:text-2xl pt-0 pr-1 flex flex-col justify-center"
+                >
+                  0
+                </p>
+                <div class="flex flex-col justify-center text-yellow-500">
+                  <svg-icon name="star"></svg-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /chan -->
+        </div>
+        <div class="option4 px-4 hidden md:block">
+          <!-- anh -->
+          <div style="--aspect-ratio: 2/1">
+            <div class="bg-option4 w-full rounded-t-xl relative">
+              <button
+                class="flex bg-white bg-opacity-25 text-white rounded-full px-4 py-1 absolute font-medium"
+                style="top: 15px; left: 15px; outline: none"
+              >
+                <svg-icon name="bar-chart" class="pt-1"></svg-icon>
+                <p>Mọi trình độ</p>
+              </button>
+              <div
+                class="flex justify-between absolute text-white w-full px-3"
+                style="bottom: 12px"
+              >
+                <div class="pl-0">
+                  <p class="text-2xl font-medium leading-4 mt-1">3</p>
+                  <h2 class="font-normal leading-5" style="font-size: 16px">
+                    người đã học
+                  </h2>
+                </div>
+
+                <!-- trai tim binh chon -->
+                <div class="flex">
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#">
+                      <div class="flex">
+                        <svg-icon
+                          name="heart-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="flex pr-1 xs:px-2 flex-col justify-center">
+                    <a href="#"
+                      ><div class="flex">
+                        <svg-icon
+                          name="bookmark-outline"
+                          class="pr-1 text-sm xs:text-lg md:text-sm lg:text-lg"
+                        ></svg-icon>
+                        <p
+                          class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg leading-3"
+                        >
+                          1
+                        </p>
+                      </div></a
+                    >
+                  </div>
+                </div>
+                <!-- /trai tim binh chon -->
+              </div>
+            </div>
+          </div>
+          <!-- /anh -->
+          <!-- chan -->
+          <div
+            class="foot1 p-3 xs:p-5 md:p-3 lg:p-5 relative rounded-b-xl text-blue-800"
+            style="background-color: #e9eff8"
+          >
+            <h3
+              class="font-semibold lg:leading-7 pb-3 xs:pb-5 md:pb-3 lg:pb-5 text-base xs:text-xl md:text-base lg:text-xl"
+            >
+              Cùng con xây dựng tự tin giao tiếp, chủ động cuộc sống
+            </h3>
+            <hr class="border-t border-gray-400" />
+            <div class="flex justify-between pt-3">
+              <div class="flex">
+                <div>
+                  <img
+                    src="https://vova-public.s3.ap-southeast-1.amazonaws.com/courses/be-tu-tin/anh/chi_mai_avatar.jpg"
+                    class="rounded-full w-8 xs:w-10 md:w-8 lg:w-10"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <h2
+                    class="font-medium text-sm xs:text-lg md:text-sm lg:text-lg"
+                  >
+                    ThS. Nguyễn Chi Mai
+                  </h2>
+                </div>
+              </div>
+
+              <div class="flex">
+                <p
+                  class="font-semibold text-lg xs:text-2xl md:text-lg lg:text-2xl pt-0 pr-1 flex flex-col justify-center"
+                >
+                  0
+                </p>
+                <div class="flex flex-col justify-center text-yellow-500">
+                  <svg-icon name="star"></svg-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /chan -->
         </div>
       </div>
     </div>

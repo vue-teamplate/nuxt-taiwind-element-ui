@@ -1,21 +1,24 @@
 <template>
-  <div class="footer bg-white px-16">
-    <div class="flex justify-between py-16">
-      <div class="w-4/12">
+  <div class="footer bg-white px-10 xs:px-16">
+    <!-- tren gach -->
+    <div class="flex justify-between flex-col md:flex-row pt-16">
+      <div class="w-full md:w-4/12 pb-16">
         <div>
           <img
             src="https://learnova.vn/img/logo-learnova.svg"
             style="width: 200px"
           />
-          <p class="pt-6 text-gray-600 leading-5" style="font-size: 17px">
+          <p class="pt-6 text-gray-600 leading-6 text-lg">
             Learnova tiên phong cung cấp khóa học trực tuyến chất lượng cao trên
             nền tảng hoàn toàn đổi mới dành cho các bạn trẻ và gia đình trẻ Việt
             Nam.
           </p>
         </div>
       </div>
-      <div class="w-6/12 flex">
-        <div class="w-1/2">
+      <div
+        class="w-full md:w-6/12 flex justify-between pb-16 flex-col sm:flex-row"
+      >
+        <div class="w-full sm:w-1/2">
           <h2 class="text-2xl font-semibold pb-5">Khám Phá Chủ Đề</h2>
           <div class="text-gray-600">
             <ul>
@@ -26,7 +29,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 pt-16 sm:pt-0">
           <h2 class="text-2xl font-semibold pb-5">Thông Tin</h2>
           <div class="text-gray-600">
             <ul>
@@ -39,12 +42,14 @@
         </div>
       </div>
     </div>
+    <!-- /tren gach -->
     <hr class="border-t border-gray-400" />
+    <!-- duoi gach -->
     <div
-      class="flex text-gray-600 py-3 justify-between"
+      class="flex text-gray-600 py-3 justify-between flex-col md:flex-row"
       style="font-size: 14px"
     >
-      <div class="njj" style="width: 45%">
+      <div class="njj w-full md:w-5/12">
         <p class="font-semibold">© 2020 Learnova</p>
         <p>
           Trụ sở chính: Tầng 3, Thiên Sơn Plaza, Chương Dương Độ, Hoàn Kiếm, Hà
@@ -52,9 +57,9 @@
           (Learnova)
         </p>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center pt-4 md:pt-0">
         <div>
-          <p class="pr-8 pl-4">
+          <p class="pr-8 pl-0 md:pl-4">
             Giấy phép ĐKKD số 0109267298 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp
           </p>
         </div>
@@ -79,6 +84,7 @@
         </div>
       </div>
     </div>
+    <!-- /duoi gach -->
   </div>
 </template>
 
