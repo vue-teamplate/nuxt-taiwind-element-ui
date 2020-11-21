@@ -1,3 +1,5 @@
+console.log('purge enabled', process.env.NODE_ENV !== 'development')
+
 module.exports = {
   important: true,
   config: {
