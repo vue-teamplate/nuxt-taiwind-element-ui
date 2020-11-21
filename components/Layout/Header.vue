@@ -86,9 +86,6 @@ export default {
     }
   }
 }
-.content2 {
-  background-color: #2a3065;
-}
 
 @media screen and(max-width: 768px) {
   .ratio-header-slider {

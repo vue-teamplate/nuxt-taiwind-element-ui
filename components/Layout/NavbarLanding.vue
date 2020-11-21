@@ -16,7 +16,7 @@
             <div class="-mr-2 flex items-center md:hidden">
               <button
                 type="button"
-                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                 @click="toggleMenu"
               >
                 <svg
@@ -37,9 +37,11 @@
           </div>
         </div>
         <div class="hidden md:block md:ml-10 md:pr-4">
-          <a href="#" class="font-medium transition duration-150 ease-in-out"
-            >Khám phá khoá học</a
-          >
+          <a href="#" class="font-medium transition duration-150 ease-in-out">
+            <button-explore-course
+              class="bg-yellow-500 text-gray-900"
+            ></button-explore-course>
+          </a>
           <a
             href="#"
             class="ml-8 font-light tracking-wide transition duration-150 ease-in-out"
@@ -64,8 +66,37 @@
                 <svg-icon name="search-outline"></svg-icon>
               </div>
             </div>
+            <div
+              class="p-3 rounded-3xl ml-2"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+            >
+              <div
+                class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
+              >
+                <svg-icon name="basket-outline"></svg-icon>
+              </div>
+            </div>
+
+            <div
+              class="p-3 rounded-3xl ml-2"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+            >
+              <div
+                class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
+              >
+                <svg-icon name="notifications-outline"></svg-icon>
+              </div>
+            </div>
           </div>
-          <div>b</div>
+          <div class="flex flex-col justify-center">
+            <div
+              class="py-3 px-3 rounded-lg cursor-pointer"
+              style="background-color: rgba(0, 0, 0, 0.2) !important"
+            >
+              <span>Đăng nhập </span>
+              <svg-icon name="log-in-outline"></svg-icon>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
@@ -92,12 +123,12 @@
               <button
                 type="button"
                 aria-label="Close menu"
-                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
                 @click="toggleMenu"
               >
                 <svg
                   stroke="currentColor"
-                  fill="none"
+                  fill=""
                   viewBox="0 0 24 24"
                   class="h-6 w-6"
                 >
@@ -153,7 +184,9 @@
 </template>
 
 <script>
+import ButtonExploreCourse from './ButtonExploreCourse.vue'
 export default {
+  components: { ButtonExploreCourse },
   data() {
     return {
       showMenu: true,
