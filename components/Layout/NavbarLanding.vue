@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="relative py-6 px-4 sm:px-6 lg:px-8">
+    <div class="relative py-6 px-4 sm:px-6 lg:mx-16 m-auto">
       <nav
         style="background-color: rgba(26, 26, 26, 0.5)"
-        class="relative flex items-center justify-between lg:justify-start p-5 text-white font-thin rounded-2xl"
+        class="relative flex items-center justify-between lg:justify-start p-8 text-white font-thin rounded-3xl"
       >
         <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div class="flex items-center justify-between w-full md:w-auto">
@@ -13,27 +13,6 @@
                 alt="Logo"
                 class="h-8 w-auto sm:h-10"
             /></a>
-            <div class="-mr-2 flex items-center md:hidden">
-              <button
-                type="button"
-                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                @click="toggleMenu"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  class="h-6 w-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  ></path>
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
         <div class="hidden md:block md:ml-10 md:pr-4">
@@ -53,42 +32,31 @@
             >Thảo luận</a
           >
         </div>
-        <div class="flex-grow justify-between md:flex hidden">
+        <div class="flex-grow justify-between md:flex">
           <div></div>
           <div class="flex">
             <div
-              class="p-3 rounded-3xl"
+              class="mr-2 rounded-3xl w-12 h-12 flex justify-center items-center text-white cursor-pointer"
               style="background-color: rgba(254, 247, 246, 0.18039)"
             >
-              <div
-                class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
-              >
-                <svg-icon name="search-outline"></svg-icon>
-              </div>
-            </div>
-            <div
-              class="p-3 rounded-3xl ml-2"
-              style="background-color: rgba(254, 247, 246, 0.18039)"
-            >
-              <div
-                class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
-              >
-                <svg-icon name="basket-outline"></svg-icon>
-              </div>
+              <svg-icon name="search-outline"></svg-icon>
             </div>
 
             <div
-              class="p-3 rounded-3xl ml-2"
+              class="mr-2 rounded-3xl w-12 h-12 flex justify-center items-center text-white cursor-pointer"
               style="background-color: rgba(254, 247, 246, 0.18039)"
             >
-              <div
-                class="w-5 h-5 flex justify-center items-center text-white cursor-pointer"
-              >
-                <svg-icon name="notifications-outline"></svg-icon>
-              </div>
+              <svg-icon name="basket-outline"></svg-icon>
+            </div>
+
+            <div
+              class="rounded-3xl w-12 h-12 flex justify-center items-center text-white cursor-pointer"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+            >
+              <svg-icon name="notifications-outline"></svg-icon>
             </div>
           </div>
-          <div class="flex flex-col justify-center">
+          <div class="md:flex flex-col justify-center hidden">
             <div
               class="py-3 px-3 rounded-lg cursor-pointer"
               style="background-color: rgba(0, 0, 0, 0.2) !important"
@@ -97,6 +65,27 @@
               <svg-icon name="log-in-outline"></svg-icon>
             </div>
           </div>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button
+            type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            @click="toggleMenu"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
         </div>
       </nav>
     </div>
