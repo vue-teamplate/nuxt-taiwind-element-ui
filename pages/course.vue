@@ -1,6 +1,6 @@
 <template>
   <div class="course-detail-container">
-    <div class="px-6 lg:px-16 xl:px-32">
+    <div class="px-6 lg:px-16 xl:px-48">
       <!-- phan 1 -->
       <div>
         <!-- tieu de -->
