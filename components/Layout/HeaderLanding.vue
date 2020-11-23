@@ -8,7 +8,7 @@
       >
         <div class="header-slide__content">
           <div class="nd px-6 xs:px-16 sm:px-32 md:px-48">
-            <div class="w-full md:w-3/5 lg:w-2/5 flex flex-col justify-center">
+            <div class="w-full md:w-3/5 lg:w-3/5 flex flex-col justify-center">
               <div
                 class="text-white font-bold tracking-normal text-4xl xs:text-5xl lg:text-6xl md:tracking-wide leading-tight md:leading-normal"
               >

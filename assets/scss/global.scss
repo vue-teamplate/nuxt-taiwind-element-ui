@@ -17,14 +17,14 @@
 }
 
 [style*="--aspect-ratio"] > :first-child {
-  width: 100%;
+  width: 100% !important; 
 }
 [style*="--aspect-ratio"] > img {  
   height: auto;
 } 
 @supports (--custom:property) {
   [style*="--aspect-ratio"] {
-    position: relative;
+    position: relative !important;
   }
   [style*="--aspect-ratio"]::before {
     content: "";
@@ -32,10 +32,10 @@
     padding-bottom: calc(100% / (var(--aspect-ratio)));
   }  
   [style*="--aspect-ratio"] > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
   }  
 }
 
