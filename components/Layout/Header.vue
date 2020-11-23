@@ -1,61 +1,175 @@
 <template>
-  <div>
-    <div class="box-border relative">
-      <div class="absolute top-0 right-0 left-0 z-50"><Navbar /></div>
-
-      <div style="--aspect-ratio: 9/5" class="ratio-header-slider">
-        <div
-          class="header-slider flex items-center sm:bg-auto lg:bg-cover lg:bg-center md:bg-bottom sm:bg-left-bottom pt-24 sm:pt-20 lg:pt-0"
-        >
-          <div class="header-slide__content">
-            <div class="nd px-6 xs:px-16 sm:px-32 md:px-48">
-              <div
-                class="w-full md:w-3/5 lg:w-2/5 flex flex-col justify-center"
-              >
-                <div
-                  class="text-white font-bold tracking-normal text-4xl xs:text-5xl lg:text-6xl md:tracking-wide leading-tight md:leading-normal"
-                >
-                  Kỹ năng mới mỗi ngày với
-                  <span class="font-bold" style="color: #ffc107">Learnova</span>
-                </div>
-                <div class="text-white sm:text-xl lg:text-2xl py-3 md:py-10">
-                  Để chúng tôi giúp bạn lựa chọn khóa học phù hợp nhất!
-                </div>
-                <div class="pt-2 xs:pt-4 pl-2">
-                  <button
-                    class="b1 bg-white text-indigo-600 w-32 xs:w-40 font-semibold text-base xs:text-lg rounded-md mt-2 ml-4 py-2 xs:py-3"
-                    style="outline: none"
-                  >
-                    Tìm hiểu thêm
-                  </button>
-                  <button
-                    class="b2 text-white w-32 xs:w-40 font-semibold text-base xs:text-lg rounded-md mt-2 ml-4 py-2 xs:py-3"
-                    style="outline: none"
-                  >
-                    Bắt đầu
-                  </button>
-                </div>
-              </div>
+  <div class="mb-5">
+    <div class="relative py-6 px-4 sm:px-6 xl:mx-20 m-auto">
+      <nav
+        class="relative flex items-center justify-between lg:justify-start p-4 text-white font-thin rounded-3xl"
+      >
+        <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="#" aria-label="Home">
+              <img
+                src="~assets/svg/logo.learnova.svg"
+                alt="Logo"
+                class="h-8 w-auto sm:h-10"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:block md:ml-10 md:pr-4">
+          <a href="#" class="font-medium transition duration-150 ease-in-out">
+            <button-explore-course class="bg-yellow-500 text-gray-900" />
+          </a>
+          <a
+            href="#"
+            class="text-gray-900 ml-8 font-normal tracking-wide transition duration-150 ease-in-out"
+            >Giành cho bạn</a
+          >
+          <a
+            href="#"
+            class="ml-8 text-gray-900 font-normal tracking-wide transition duration-150 ease-in-out"
+            >Thảo luận</a
+          >
+        </div>
+        <div class="flex-grow justify-between md:flex">
+          <div></div>
+          <div class="hidden sm:flex">
+            <div
+              class="mr-2 border border-gray-300 bg-gray-100 text-gray-700 rounded-3xl w-12 h-12 flex justify-center items-center cursor-pointer"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+              @click="showModalSearch"
+            >
+              <svg-icon name="search-outline"></svg-icon>
             </div>
+
+            <div
+              class="mr-2 border border-gray-300 bg-gray-100 text-gray-700 rounded-3xl w-12 h-12 flex justify-center items-center cursor-pointer"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+            >
+              <svg-icon name="basket-outline"></svg-icon>
+            </div>
+
+            <div
+              class="mr-2 border border-gray-300 bg-gray-100 text-gray-700 rounded-3xl w-12 h-12 flex justify-center items-center cursor-pointer"
+              style="background-color: rgba(254, 247, 246, 0.18039)"
+            >
+              <svg-icon name="notifications-outline"></svg-icon>
+            </div>
+          </div>
+          <div class="md:flex flex-col justify-center hidden">
+            <ButtonProfile></ButtonProfile>
+          </div>
+        </div>
+        <div class="-mr-2 flex items-center md:hidden">
+          <button
+            type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            @click="toggleMenu"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="absolute top-0 inset-x-0 p-2 z-50 transition transform origin-top-right md:hidden"
+      :class="{ hidden: !showMenu }"
+    >
+      <div class="rounded-lg shadow-md">
+        <div
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="main-menu"
+          class="rounded-lg bg-white shadow-xs overflow-hidden"
+        >
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img
+                src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
+                alt=""
+                class="h-8 w-auto"
+              />
+            </div>
+            <div class="-mr-2">
+              <button
+                type="button"
+                aria-label="Close menu"
+                class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                @click="toggleMenu"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill=""
+                  viewBox="0 0 24 24"
+                  class="h-6 w-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3">
+            <a
+              href="#"
+              role="menuitem"
+              class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+              >Product</a
+            >
+            <a
+              href="#"
+              role="menuitem"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+              >Features</a
+            >
+            <a
+              href="#"
+              role="menuitem"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+              >Marketplace</a
+            >
+            <a
+              href="#"
+              role="menuitem"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+              >Company</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              role="menuitem"
+              class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out"
+            >
+              Log in
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="content2">
-      <Item1 />
-      <Item2 />
-      <Item3 />
-      <Item4 />
-      <Batdau />
-      <Uudiem />
-      <Chiase />
-      <Footer />
     </div>
   </div>
 </template>
 
 <script>
+import ButtonProfile from '../User/ButtonProfile.vue'
+import ButtonExploreCourse from './ButtonExploreCourse.vue'
 export default {
+  components: { ButtonExploreCourse, ButtonProfile },
   data() {
     return {
       showMenu: true,
@@ -65,41 +179,9 @@ export default {
     toggleMenu() {
       this.showMenu = !this.showMenu
     },
+    showModalSearch() {
+      this.$nuxt.$emit('show-model-search')
+    },
   },
 }
 </script>
-
-<style lang="scss">
-.header-slider {
-  background-image: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.5)),
-    url('~assets/image/top-banner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-
-  .nd {
-    .b2 {
-      background-image: linear-gradient(to right, #e208a3, #ff4698);
-    }
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .ratio-header-slider {
-    &::before {
-      padding-bottom: 80% !important;
-    }
-  }
-}
-
-@media screen and(max-width: 576px) {
-  .ratio-header-slider {
-    &::before {
-      padding-bottom: 135% !important;
-    }
-  }
-}
-</style>

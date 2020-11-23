@@ -313,7 +313,6 @@ import FooterCourse from '~/components/Course/Footer-course.vue'
 export default {
   components: { FooterCourse },
   auth: false,
-  layout: 'empty',
 }
 </script>
 

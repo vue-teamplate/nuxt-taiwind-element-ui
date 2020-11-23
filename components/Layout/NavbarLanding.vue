@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative py-6 px-4 sm:px-6 lg:mx-16 m-auto">
+    <div class="relative py-6 px-4 sm:px-6 xl:mx-20 m-auto">
       <nav
         style="background-color: rgba(26, 26, 26, 0.5)"
         class="relative flex items-center justify-between lg:justify-start p-8 text-white font-thin rounded-3xl"
@@ -34,10 +34,11 @@
         </div>
         <div class="flex-grow justify-between md:flex">
           <div></div>
-          <div class="flex">
+          <div class="hidden sm:flex">
             <div
               class="mr-2 rounded-3xl w-12 h-12 flex justify-center items-center text-white cursor-pointer"
               style="background-color: rgba(254, 247, 246, 0.18039)"
+              @click="showModalSearch"
             >
               <svg-icon name="search-outline"></svg-icon>
             </div>
@@ -184,6 +185,9 @@ export default {
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu
+    },
+    showModalSearch() {
+      this.$nuxt.$emit('show-model-search')
     },
   },
 }
