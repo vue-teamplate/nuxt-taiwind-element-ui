@@ -1,6 +1,6 @@
 <template>
   <div class="mb-5">
-    <div class="relative py-6 px-4 sm:px-6 xl:mx-20 m-auto">
+    <div class="relative py-3 px-4 sm:px-6 xl:mx-20 m-auto">
       <nav
         class="relative flex items-center justify-between lg:justify-start p-4 text-white font-thin rounded-3xl"
       >
@@ -21,12 +21,12 @@
           </a>
           <a
             href="#"
-            class="text-gray-900 ml-8 font-normal tracking-wide transition duration-150 ease-in-out"
+            class="text-gray-800 ml-8 font-normal tracking-wide transition duration-150 ease-in-out"
             >Giành cho bạn</a
           >
           <a
             href="#"
-            class="ml-8 text-gray-900 font-normal tracking-wide transition duration-150 ease-in-out"
+            class="ml-8 text-gray-800 font-normal tracking-wide transition duration-150 ease-in-out"
             >Thảo luận</a
           >
         </div>
