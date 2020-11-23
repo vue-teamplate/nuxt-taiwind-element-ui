@@ -1,6 +1,6 @@
 <template>
   <div class="course-detail-container">
-    <div class="px-32">
+    <div class="px-6 lg:px-16 xl:px-32">
       <!-- phan 1 -->
       <div>
         <!-- tieu de -->
@@ -13,9 +13,9 @@
         <!-- ket thuc tieu de -->
 
         <!-- bat dau noi dung -->
-        <div class="course-detail-thongtinkhoahoc-col flex pt-6 box-border">
+        <div class="flex pt-6 box-border flex-col md:flex-row">
           <!-- col1 -->
-          <div class="w-1/2">
+          <div class="w-full md:w-1/2">
             <!-- col1-nd -->
             <div class="h-full flex flex-col">
               <!-- anh -->
@@ -37,7 +37,7 @@
                   class="flex border-gray-400 justify-between border-b pt-5 pb-8 h-full"
                 >
                   <!-- cot1 -->
-                  <div class="flex flex-col justify-between">
+                  <div class="flex flex-col space-y-5">
                     <h2 class="text-2xl font-medium pr-6">
                       Thông tin khóa học
                     </h2>
@@ -90,7 +90,7 @@
                   <!-- ket thuc cot1 -->
 
                   <!-- cot2 -->
-                  <div class="flex flex-col justify-between items-end">
+                  <div class="flex flex-col space-y-5 items-end">
                     <div>
                       <button
                         class="rounded-md py-1 px-2"
@@ -146,10 +146,10 @@
             </div>
           </div>
           <!-- col2 -->
-          <div class="w-1/2 flex">
+          <div class="w-full md:w-1/2 flex pt-6 md:pt-0 flex-col sm:flex-row">
             <!-- cot1 -->
-            <div class="w-1/2 pl-8">
-              <div class="border p-5 rounded-md">
+            <div class="w-full sm:w-1/2 sm:pr-4 md:pl-8 mb-8 sm:mb-0">
+              <div class="border p-5 rounded-md h-full shadow">
                 <!-- giang vien -->
                 <div class="flex justify-between text-xl">
                   <p>Giảng viên</p>
@@ -158,22 +158,58 @@
                 <!-- lo trinh hoc -->
                 <div>
                   <h5 class="pt-3 pb-2 text-base">Lộ trình học</h5>
-                  <div class="grid grid-cols-2 gap-2">
-                    <div class="bg-gray-200 rounded-lg text-center p-4">
-                      <p class="text-sm text-blue-600">Tổng giờ học</p>
-                      <div class="text-indigo-600 font-bold text-3xl">3+</div>
+                  <!-- luoi 4 o -->
+                  <div class="flex flex-wrap">
+                    <div class="w-1/2 pr-1 pb-1">
+                      <div
+                        class="bg-gray-200 rounded-lg flex justify-center text-center py-4 h-full"
+                      >
+                        <div>
+                          <p class="text-sm text-blue-600">Tổng giờ học</p>
+                          <div class="text-indigo-600 font-bold text-3xl">
+                            3+
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="bg-gray-200 rounded-lg text-center p-4">
-                      <p class="text-sm text-blue-600">Chứng chỉ đã nhận</p>
-                      <div class="text-indigo-600 font-bold text-3xl">01</div>
+
+                    <div class="w-1/2 pl-1 pb-1">
+                      <div
+                        class="bg-gray-200 rounded-lg flex justify-center h-full py-4 text-center"
+                      >
+                        <div>
+                          <p class="text-sm text-blue-600">Chứng chỉ đã nhận</p>
+                          <div class="text-indigo-600 font-bold text-3xl">
+                            01
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="bg-gray-200 rounded-lg text-center p-4">
-                      <p class="text-sm text-blue-600">Bài học</p>
-                      <div class="text-indigo-600 font-bold text-3xl">07</div>
+
+                    <div class="w-1/2 pr-1 pt-1">
+                      <div
+                        class="bg-gray-200 rounded-lg text-center flex justify-center py-4 h-full"
+                      >
+                        <div>
+                          <p class="text-sm text-blue-600">Bài học</p>
+                          <div class="text-indigo-600 font-bold text-3xl">
+                            07
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="bg-gray-200 rounded-lg text-center p-4">
-                      <p class="text-sm text-blue-600">Thực hành</p>
-                      <div class="text-indigo-600 font-bold text-3xl">00</div>
+
+                    <div class="w-1/2 pl-1 pt-1">
+                      <div
+                        class="bg-gray-200 rounded-lg text-center flex justify-center py-4 h-full"
+                      >
+                        <div>
+                          <p class="text-sm text-blue-600">Thực hành</p>
+                          <div class="text-indigo-600 font-bold text-3xl">
+                            00
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -204,9 +240,9 @@
               </div>
             </div>
             <!-- cot2 -->
-            <div class="w-1/2 pl-8">
+            <div class="w-full sm:w-1/2 sm:pl-4 md:pl-8">
               <div
-                class="col2-2-nd rounded-md bg-gray-200 text-blue-700 h-full"
+                class="col2-2-nd rounded-md bg-gray-200 text-blue-700 h-full shadow"
               >
                 <h1 class="p-5 text-2xl">Duy nhất học tại Learnova</h1>
                 <hr class="ad" />

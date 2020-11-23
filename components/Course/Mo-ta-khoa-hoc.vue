@@ -1,9 +1,9 @@
 <template>
   <!-- phan 2 -->
   <div>
-    <div class="flex py-10">
-      <!-- cot 1: Mo ta khoa hoc -->
-      <div class="w-1/2">
+    <div class="flex py-10 flex-col md:flex-row">
+      <!-- col 1: Mo ta khoa hoc -->
+      <div class="w-full md:w-1/2 mb-3 sm:mb-0">
         <!-- list -->
         <div>
           <ul>
@@ -97,8 +97,8 @@
         </div>
       </div>
 
-      <!-- cot 1: Nhan xet -->
-      <div class="pl-8 w-1/2">
+      <!-- co2 2: Nhan xet -->
+      <div class="pl-0 sm:pl-8 w-full md:w-1/2">
         <div>
           <div class="flex justify-between">
             <div class="flex">
@@ -109,7 +109,7 @@
                 </p>
               </div>
             </div>
-            <p class="underline text-indigo-600">
+            <p class="underline text-indigo-600 flex items-end">
               <a href="#"> Xem tất cả bình luận</a>
             </p>
           </div>
